@@ -1,3 +1,6 @@
+import torch
+import numpy as np
+import itertools
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print('Using device:', device)
 
