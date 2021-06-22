@@ -1,4 +1,8 @@
-
+import torch
+import numpy as np
+import itertools
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print('Using device:', device)
 
 def get_sesma_product(m1, atoms1, m2, atoms2):
   #Create tensors
